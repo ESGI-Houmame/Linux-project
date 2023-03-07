@@ -144,10 +144,10 @@ done
 # si c'est un compte systeme
 if [ $system = "y" ]
 then
-    useradd -r -c $comment -m -d $folder -e $expiration -g $groups -u $uid -p $password  $username
+    useradd -r -c $comment -m -d $folder -e $expiration -G $groups -u $uid -p $password  $username
 # si ce n'est pas un compte systeme
 else
-    useradd -c $comment -m -d $folder -e $expiration -g $groups -u $uid -p $password $username
+    useradd -c $comment -m -d $folder -e $expiration -G $groups -u $uid -p $password $username
 fi
 
 ##on doit random un mot de passe et l'afficher

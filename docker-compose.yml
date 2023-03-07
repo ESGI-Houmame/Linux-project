@@ -6,4 +6,4 @@ services:
     container_name: ubuntu
     volumes:
       - ./scripts:/scripts
-    command: /bin/bash -c "chmod +x main.sh && ./main.sh && while true; do sleep 1; done"
+    command: /bin/bash -c "chmod +x /scripts/main.sh && /scripts/main.sh && while true; do sleep 1; done"
